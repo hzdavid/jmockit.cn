@@ -23,7 +23,7 @@ public class ProgramConstructureTest {
 	@Test
 	public void test1() {
 		// 录制(Record)
-		new Expectations(Calendar.class) {
+		new Expectations() {
 			{
 				helloJMockit.sayHello();
 				// 期待上述调用的返回是"hello,david"，而不是返回"hello,JMockit"
@@ -46,7 +46,7 @@ public class ProgramConstructureTest {
 	@Test
 	public void test2(@Mocked HelloJMockit helloJMockit /* 这是一个测试参数 */) {
 		// 录制(Record)
-		new Expectations(Calendar.class) {
+		new Expectations() {
 			{
 				helloJMockit.sayHello();
 				// 期待上述调用的返回是"hello,david"，而不是返回"hello,JMockit"
