@@ -47,6 +47,7 @@ public class SpringBeanMockingByMockUpTest {
 	}
 
 	// 加载AnOrdinaryClass类的native方法的native实现
+	@BeforeClass
 	public static void loadNative() throws Throwable {
 		JNITools.loadNative();
 	}

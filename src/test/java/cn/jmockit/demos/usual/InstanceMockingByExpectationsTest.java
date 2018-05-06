@@ -1,9 +1,11 @@
 package cn.jmockit.demos.usual;
+
 /*
  * Copyright (c) jmockit.cn 
  * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
  */
 import org.junit.Assert;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import cn.jmockit.demos.AnOrdinaryClass;
@@ -25,6 +27,7 @@ public class InstanceMockingByExpectationsTest {
 				// mock final方法
 				instance.finalMethod();
 				result = 30;
+				instance.navtiveMethod();
 				// native, private方法无法用Expectations来Mock
 			}
 		};
@@ -38,6 +41,7 @@ public class InstanceMockingByExpectationsTest {
 	}
 
 	// 加载AnOrdinaryClass类的native方法的native实现
+	@BeforeClass
 	public static void loadNative() throws Throwable {
 		JNITools.loadNative();
 	}

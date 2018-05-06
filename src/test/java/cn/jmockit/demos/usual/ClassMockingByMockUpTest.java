@@ -21,32 +21,27 @@ public class ClassMockingByMockUpTest {
 		public static int staticMethod() {
 			return 10;
 		}
-
 		// Mock普通方法
 		@Mock
 		public int ordinaryMethod() {
 			return 20;
 		}
-
 		@Mock
 		// Mock final方法
 		public final int finalMethod() {
 			return 30;
 		}
-
 		// Mock native方法
 		@Mock
 		public int navtiveMethod() {
 			return 40;
 		}
-
 		// Mock private方法
 		@Mock
 		private int privateMethod() {
 			return 50;
 		}
 	}
-
 	@Test
 	public void testClassMockingByMockUp() {
 		new AnOrdinaryClassMockUp();
