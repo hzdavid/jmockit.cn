@@ -3,9 +3,6 @@ package cn.jmockit.demos.usual;
  * Copyright (c) jmockit.cn 
  * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
  */
-import java.io.File;
-import java.net.URI;
-
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;

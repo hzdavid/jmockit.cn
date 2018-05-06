@@ -1,13 +1,13 @@
 
 package cn.jmockit.demos.utils;
 
-import java.io.File;
-import java.net.URI;
-
 /*
  * Copyright (c) jmockit.cn 
  * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
  */
+import java.io.File;
+import java.net.URI;
+
 public class JNITools {
 	// 加载AnOrdinaryClass类的native方法
 	public static void loadNative() throws Throwable {

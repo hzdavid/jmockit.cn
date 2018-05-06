@@ -3,8 +3,6 @@ package cn.jmockit.demos.basic;
  * Copyright (c) jmockit.cn 
  * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
  */
-import java.util.Calendar;
-
 import org.junit.Assert;
 import org.junit.Test;
 
