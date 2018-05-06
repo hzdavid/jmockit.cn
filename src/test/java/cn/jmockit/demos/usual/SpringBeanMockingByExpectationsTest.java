@@ -16,6 +16,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import cn.jmockit.demos.AnOrdinaryClass;
+import cn.jmockit.demos.utils.JNITools;
 import mockit.Expectations;
 
 //用Expectations来Mock Spring Bean
@@ -51,10 +52,8 @@ public class SpringBeanMockingByExpectationsTest {
 	}
 
 	@BeforeClass
-	// 加载AnOrdinaryClass类的native方法的dll
-	public static void loadNative() throws Throwable {
-		URI uri = ClassLoader.class.getResource("/").toURI();
-		String realPath = new File(uri).getAbsolutePath() + "/libAnOrdinaryClass.dll";
-		System.load(realPath);
-	}
+	// 加载AnOrdinaryClass类的native方法的native实现
+		public static void loadNative() throws Throwable {
+			JNITools.loadNative();
+		}
 }

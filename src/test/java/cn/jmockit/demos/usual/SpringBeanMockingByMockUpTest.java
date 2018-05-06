@@ -1,4 +1,5 @@
 package cn.jmockit.demos.usual;
+
 /*
  * Copyright (c) jmockit.cn 
  * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
@@ -16,6 +17,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import cn.jmockit.demos.AnOrdinaryClass;
+import cn.jmockit.demos.utils.JNITools;
 import mockit.Mock;
 import mockit.MockUp;
 
@@ -48,11 +50,9 @@ public class SpringBeanMockingByMockUpTest {
 		addMockUps();
 	}
 
-	// 加载AnOrdinaryClass类的native方法的dll
+	// 加载AnOrdinaryClass类的native方法的native实现
 	public static void loadNative() throws Throwable {
-		URI uri = ClassLoader.class.getResource("/").toURI();
-		String realPath = new File(uri).getAbsolutePath() + "/libAnOrdinaryClass.dll";
-		System.load(realPath);
+		JNITools.loadNative();
 	}
 
 	// 对AnOrdinaryClass的Class
