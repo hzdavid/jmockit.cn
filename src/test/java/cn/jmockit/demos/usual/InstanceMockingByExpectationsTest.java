@@ -31,13 +31,13 @@ public class InstanceMockingByExpectationsTest {
 				// native, private方法无法用Expectations来Mock
 			}
 		};
-		Assert.assertTrue(AnOrdinaryClass.staticMethod() == 1);
-		Assert.assertTrue(instance.ordinaryMethod() == 20);
-		Assert.assertTrue(instance.finalMethod() == 30);
+		Assert.assertEquals(1, AnOrdinaryClass.staticMethod());
+		Assert.assertEquals(20, instance.ordinaryMethod());
+		Assert.assertEquals(30, instance.finalMethod());
 		// 用Expectations无法mock native方法
-		Assert.assertTrue(instance.navtiveMethod() == 4);
+		Assert.assertEquals(4, instance.navtiveMethod());
 		// 用Expectations无法mock private方法
-		Assert.assertTrue(instance.callPrivateMethod() == 5);
+		Assert.assertEquals(5, instance.callPrivateMethod());
 	}
 
 	// 加载AnOrdinaryClass类的native方法的native实现

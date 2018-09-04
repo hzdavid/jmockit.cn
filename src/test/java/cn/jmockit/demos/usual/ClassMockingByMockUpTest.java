@@ -47,15 +47,15 @@ public class ClassMockingByMockUpTest {
 		new AnOrdinaryClassMockUp();
 		AnOrdinaryClass instance = new AnOrdinaryClass();
 		// 静态方法被mock了
-		Assert.assertTrue(AnOrdinaryClass.staticMethod() == 10);
+		Assert.assertEquals(10, AnOrdinaryClass.staticMethod());
 		// 普通方法被mock了
-		Assert.assertTrue(instance.ordinaryMethod() == 20);
+		Assert.assertEquals(20, instance.ordinaryMethod());
 		// final方法被mock了
-		Assert.assertTrue(instance.finalMethod() == 30);
+		Assert.assertEquals(30, instance.finalMethod());
 		// native方法被mock了
-		Assert.assertTrue(instance.navtiveMethod() == 40);
+		Assert.assertEquals(40, instance.navtiveMethod());
 		// private方法被mock了
-		Assert.assertTrue(instance.callPrivateMethod() == 50);
+		Assert.assertEquals(50, instance.callPrivateMethod());
 	}
 
 	@BeforeClass

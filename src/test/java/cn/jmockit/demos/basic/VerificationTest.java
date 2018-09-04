@@ -28,8 +28,8 @@ public class VerificationTest {
 		};
 		// 重放阶段
 		Calendar now = Calendar.getInstance();
-		Assert.assertTrue(now.get(Calendar.YEAR) == 2016);
-		Assert.assertTrue(now.get(Calendar.HOUR_OF_DAY) == 7);
+		Assert.assertEquals(2016, now.get(Calendar.YEAR));
+		Assert.assertEquals(7, now.get(Calendar.HOUR_OF_DAY));
 		// 验证阶段
 		new FullVerifications() {
 			{

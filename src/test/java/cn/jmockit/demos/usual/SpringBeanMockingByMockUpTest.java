@@ -28,15 +28,15 @@ public class SpringBeanMockingByMockUpTest {
 	@Test
 	public void testSpringBeanMockingByMockUp() {
 		// 静态方法被mock了
-		Assert.assertTrue(AnOrdinaryClass.staticMethod() == 10);
+		Assert.assertEquals(10, AnOrdinaryClass.staticMethod());
 		// 普通方法被mock了
-		Assert.assertTrue(anOrdinaryBean.ordinaryMethod() == 20);
+		Assert.assertEquals(20, anOrdinaryBean.ordinaryMethod());
 		// final方法被mock了
-		Assert.assertTrue(anOrdinaryBean.finalMethod() == 30);
+		Assert.assertEquals(30, anOrdinaryBean.finalMethod());
 		// native方法被mock了
-		Assert.assertTrue(anOrdinaryBean.navtiveMethod() == 40);
+		Assert.assertEquals(40, anOrdinaryBean.navtiveMethod());
 		// private方法被mock了
-		Assert.assertTrue(anOrdinaryBean.callPrivateMethod() == 50);
+		Assert.assertEquals(50, anOrdinaryBean.callPrivateMethod());
 	}
 
 	@BeforeClass

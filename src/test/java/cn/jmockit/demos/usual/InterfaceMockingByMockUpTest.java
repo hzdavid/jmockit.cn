@@ -29,7 +29,7 @@ public class InterfaceMockingByMockUpTest {
 			}
 		}.getMockInstance();
 
-		Assert.assertTrue(anOrdinaryInterface.method1() == 10);
-		Assert.assertTrue(anOrdinaryInterface.method2() == 20);
+		Assert.assertEquals(10, anOrdinaryInterface.method1());
+		Assert.assertEquals(20, anOrdinaryInterface.method2());
 	}
 }

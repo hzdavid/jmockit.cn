@@ -16,6 +16,7 @@ public class InterfaceMockingByExpectationsTest {
 	// 通过@Injectable，让JMockit帮我们生成这个接口的实例，
 	// 一般来说，接口是给类来依赖的，我们给待测试的类加上@Tested，就可以让JMockit做依赖注入。详细见JMockit基础的章节
 	@Injectable
+	private
 	AnOrdinaryInterface anOrdinaryInterface;
 
 	@Test
@@ -29,7 +30,7 @@ public class InterfaceMockingByExpectationsTest {
 				result = 20;
 			}
 		};
-		Assert.assertTrue(anOrdinaryInterface.method1() == 10);
-		Assert.assertTrue(anOrdinaryInterface.method2() == 20);
+		Assert.assertEquals(10, anOrdinaryInterface.method1());
+		Assert.assertEquals(20, anOrdinaryInterface.method2());
 	}
 }

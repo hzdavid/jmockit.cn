@@ -17,11 +17,12 @@ import mockit.Tested;
 public class TestedAndInjectable {
 	// @Tested修饰的类，表示是我们要测试对象,在这里表示，我想测试订单服务类。JMockit也会帮我们实例化这个测试对象
 	@Tested
+	private
 	OrderService orderService;
 	//测试用户ID
-	long testUserId = 123456l;
+	private long testUserId = 123456L;
 	//测试商品id
-	long testItemId = 456789l;
+	private long testItemId = 456789L;
 
 	// 测试注入方式
 	@Test

@@ -54,10 +54,10 @@ public class GenericMockUpTest {
 			}
 		};
 		// 发现自定义的实现没有起作用，而是被Mock逻辑替代了
-		Assert.assertTrue(instance1.method1() == 10);
-		Assert.assertTrue(instance2.method1() == 10);
-		Assert.assertTrue(instance1.method2() == 20);
-		Assert.assertTrue(instance2.method2() == 20);
+		Assert.assertEquals(10, instance1.method1());
+		Assert.assertEquals(10, instance2.method1());
+		Assert.assertEquals(20, instance1.method2());
+		Assert.assertEquals(20, instance2.method2());
 	}
 
 	// 其实用@Capturing也是一样的效果
@@ -97,9 +97,9 @@ public class GenericMockUpTest {
 			}
 		};
 		// 发现自定义的实现没有起作用，而是被Mock逻辑替代了
-		Assert.assertTrue(instance1.method1() == 10);
-		Assert.assertTrue(instance2.method1() == 10);
-		Assert.assertTrue(instance1.method2() == 20);
-		Assert.assertTrue(instance2.method2() == 20);
+		Assert.assertEquals(10, instance1.method1());
+		Assert.assertEquals(10, instance2.method1());
+		Assert.assertEquals(20, instance1.method2());
+		Assert.assertEquals(20, instance2.method2());
 	}
 }

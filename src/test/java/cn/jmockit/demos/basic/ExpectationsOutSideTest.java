@@ -28,10 +28,10 @@ public class ExpectationsOutSideTest {
 				result = 7;// 小时不再返回当前小时。而是返回早上7点钟
 			}
 		};
-		Assert.assertTrue(cal.get(Calendar.YEAR) == 2016);
-		Assert.assertTrue(cal.get(Calendar.HOUR_OF_DAY) == 7);
+		Assert.assertEquals(2016, cal.get(Calendar.YEAR));
+		Assert.assertEquals(7, cal.get(Calendar.HOUR_OF_DAY));
 		// 因为没有录制过，所以这里月份返回默认值 0
-		Assert.assertTrue(cal.get(Calendar.DAY_OF_MONTH) == 0);
+		Assert.assertEquals(0, cal.get(Calendar.DAY_OF_MONTH));
 	}
 
 }
