@@ -32,7 +32,7 @@ public class ExpectationsConstructorTest2 {
 		// 因为下面的调用mock过了，小时永远返回7点钟了
 		Assert.assertEquals(7, now.get(Calendar.HOUR_OF_DAY));
 		// 因为下面的调用没有mock过，所以方法的行为不受mock影响，
-		Assert.assertEquals(now.get(Calendar.DAY_OF_MONTH),LocalDate.now().getDayOfMonth()));
+		Assert.assertEquals(now.get(Calendar.DAY_OF_MONTH),LocalDate.now().getDayOfMonth());
 	}
 
 	// 把对象传入Expectations的构造函数

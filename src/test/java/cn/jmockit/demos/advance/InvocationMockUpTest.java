@@ -1,13 +1,6 @@
 package cn.jmockit.demos.advance;
-/*
- * Copyright (c) jmockit.cn 
- * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
- */
-import java.time.Instant;
 import java.time.LocalDate;
-import java.time.temporal.TemporalField;
 import java.util.Calendar;
-import java.util.Date;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -36,9 +29,8 @@ public class InvocationMockUpTest {
 		Calendar now = Calendar.getInstance();
 		// 只有小时变成Mock方法
 		Assert.assertEquals(7, now.get(Calendar.HOUR_OF_DAY));
-		// 其它的还是走老的方法
-
-		Assert.assertEquals(now.get(Calendar.MONTH),LocalDate.now().getMonthValue());
+		// 其它的还是走老的方法 
+		Assert.assertEquals(now.get(Calendar.MONTH)+1,LocalDate.now().getMonthValue());
 		Assert.assertEquals(now.get(Calendar.DAY_OF_MONTH), LocalDate.now().getDayOfMonth());
 	}
 
