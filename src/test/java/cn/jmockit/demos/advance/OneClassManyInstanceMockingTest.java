@@ -48,11 +48,11 @@ public class OneClassManyInstanceMockingTest {
 		};
 		AnOrdinaryClass instance3 = new AnOrdinaryClass();
 		// instance1的ordinaryMethod被Mock了
-		Assert.assertTrue(instance1.ordinaryMethod() == 20);
+		Assert.assertEquals(20, instance1.ordinaryMethod());
 		// instance2的ordinaryMethod被Mock了
-		Assert.assertTrue(instance2.ordinaryMethod() == 200);
+		Assert.assertEquals(200, instance2.ordinaryMethod());
 		// instance3受@Mock的影响。@Mock会把类的所有方法都Mock，返回类型为基本数据类型的返回0
-		Assert.assertTrue(instance3.ordinaryMethod() == 0);
+		Assert.assertEquals(0, instance3.ordinaryMethod());
 	}
 	// Mock方法二: 用@Injectable。适用场景： 不是类的所实例都需要Mock，不同实例也能保留不同的Mock逻辑
 	@Test
@@ -67,11 +67,11 @@ public class OneClassManyInstanceMockingTest {
 		};
 		AnOrdinaryClass instance3 = new AnOrdinaryClass();
 		// instance1的ordinaryMethod被Mock了
-		Assert.assertTrue(instance1.ordinaryMethod() == 20);
+		Assert.assertEquals(20, instance1.ordinaryMethod());
 		// instance2的ordinaryMethod被Mock了
-		Assert.assertTrue(instance2.ordinaryMethod() == 200);
+		Assert.assertEquals(200, instance2.ordinaryMethod());
 		// instance3不受@Injectable的影响。因为@Injectable只影响某个实例
-		Assert.assertTrue(instance3.ordinaryMethod() == 2);
+		Assert.assertEquals(2, instance3.ordinaryMethod());
 	}
 
 }

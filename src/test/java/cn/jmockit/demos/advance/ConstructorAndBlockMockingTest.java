@@ -30,9 +30,9 @@ public class ConstructorAndBlockMockingTest {
 		new AnOrdinaryClassWithBlockMockUp();
 		AnOrdinaryClassWithBlock instance = new AnOrdinaryClassWithBlock(10);
 		// 静态初始代码块被mock了
-		Assert.assertTrue(AnOrdinaryClassWithBlock.j == 0);
+		Assert.assertEquals(0, AnOrdinaryClassWithBlock.j);
 		// 构造函数和初始代码块被mock
-		Assert.assertTrue(instance.getI() == 0);
+		Assert.assertEquals(0, instance.getI());
 	}
 
 }

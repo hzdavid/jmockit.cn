@@ -40,13 +40,13 @@ public class SpringBeanMockingByExpectationsTest {
 				// native, private方法无法用Expectations来Mock
 			}
 		};
-		Assert.assertTrue(AnOrdinaryClass.staticMethod() == 1);
-		Assert.assertTrue(anOrdinaryBean.ordinaryMethod() == 20);
-		Assert.assertTrue(anOrdinaryBean.finalMethod() == 30);
+		Assert.assertEquals(1, AnOrdinaryClass.staticMethod());
+		Assert.assertEquals(20, anOrdinaryBean.ordinaryMethod());
+		Assert.assertEquals(30, anOrdinaryBean.finalMethod());
 		// 用Expectations无法mock native方法
-		Assert.assertTrue(anOrdinaryBean.navtiveMethod() == 4);
+		Assert.assertEquals(4, anOrdinaryBean.navtiveMethod());
 		// 用Expectations无法mock private方法
-		Assert.assertTrue(anOrdinaryBean.callPrivateMethod() == 5);
+		Assert.assertEquals(5, anOrdinaryBean.callPrivateMethod());
 	}
 
 	@BeforeClass

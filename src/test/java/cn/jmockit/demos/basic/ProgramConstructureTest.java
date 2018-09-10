@@ -16,7 +16,7 @@ public class ProgramConstructureTest {
 
 	// 这是一个测试属性
 	@Mocked
-	HelloJMockit helloJMockit;
+	private HelloJMockit helloJMockit;
 
 	@Test
 	public void test1() {
@@ -30,7 +30,7 @@ public class ProgramConstructureTest {
 		};
 		// 重放(Replay)
 		String msg = helloJMockit.sayHello();
-		Assert.assertTrue(msg.equals("hello,david"));
+		Assert.assertEquals("hello,david", msg);
 		// 验证(Verification)
 		new Verifications() {
 			{
@@ -53,7 +53,7 @@ public class ProgramConstructureTest {
 		};
 		// 重放(Replay)
 		String msg = helloJMockit.sayHello();
-		Assert.assertTrue(msg.equals("hello,david"));
+		Assert.assertEquals("hello,david", msg);
 		// 验证(Verification)
 		new Verifications() {
 			{

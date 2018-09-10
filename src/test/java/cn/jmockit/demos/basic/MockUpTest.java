@@ -12,6 +12,8 @@ import org.junit.Test;
 import mockit.Mock;
 import mockit.MockUp;
 
+import static org.junit.Assert.assertTrue;
+
 //Mockup & @Mock的Mock方式
 public class MockUpTest {
 
@@ -26,7 +28,7 @@ public class MockUpTest {
 				if (unit == Calendar.YEAR) {
 					return 2017;
 				}
-				if (unit == Calendar.MONDAY) {
+				if (unit == Calendar.MONTH) {
 					return 12;
 				}
 				if (unit == Calendar.DAY_OF_MONTH) {
@@ -40,12 +42,12 @@ public class MockUpTest {
 		};
 		// 从此Calendar的get方法，就沿用你定制过的逻辑，而不是它原先的逻辑。
 		Calendar cal = Calendar.getInstance(Locale.FRANCE);
-		Assert.assertTrue(cal.get(Calendar.YEAR) == 2017);
-		Assert.assertTrue(cal.get(Calendar.MONDAY) == 12);
-		Assert.assertTrue(cal.get(Calendar.DAY_OF_MONTH) == 25);
-		Assert.assertTrue(cal.get(Calendar.HOUR_OF_DAY) == 7);
+		Assert.assertEquals(2017, cal.get(Calendar.YEAR));
+		Assert.assertEquals(12, cal.get(Calendar.MONDAY));
+		Assert.assertEquals(25, cal.get(Calendar.DAY_OF_MONTH));
+		Assert.assertEquals(7, cal.get(Calendar.HOUR_OF_DAY));
 		// Calendar的其它方法，不受影响
-		Assert.assertTrue((cal.getFirstDayOfWeek() == Calendar.MONDAY));
+		assertTrue((cal.getFirstDayOfWeek() == Calendar.MONDAY));
 
 	}
 }
