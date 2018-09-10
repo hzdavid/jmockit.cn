@@ -6,7 +6,6 @@ package cn.jmockit.demos.basic;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.Calendar;
-import java.util.Date;
 
 import org.junit.Assert;
 import org.junit.Test;
