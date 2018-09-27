@@ -9,8 +9,9 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java-version>1.8</java-version>
+		<jmock-version>1.36</jmock-version> 
+		<junit-version>4.12</junit-version> 
 		<spring-version>3.2.4.RELEASE</spring-version>
-		<junit-version>4.9</junit-version>
 		<dubbo-version>2.7.0-SNAPSHOT</dubbo-version>
 		<rocketmq-version>3.2.6</rocketmq-version> 
 	</properties>
@@ -19,14 +20,14 @@
 		<dependency>
 			<groupId>org.jmockit</groupId>
 			<artifactId>jmockit</artifactId>
-			<version>1.36</version>
+			<version>${jmock-version}</version>
 			<scope>test</scope>
 		</dependency>
 		<!-- 再声明junit的依赖 -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.9</version>
+			<version>${junit-version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -55,8 +56,7 @@
 			<groupId>javax.servlet</groupId>
 			<version>2.5</version>
 		</dependency>
-		<!-- dubbo 依赖 -->
-
+		<!-- dubbo 依赖 --> 
 		<dependency>
 			<groupId>org.apache.dubbo</groupId>
 			<artifactId>dubbo-config-spring</artifactId>
@@ -66,27 +66,7 @@
 			<groupId>org.apache.dubbo</groupId>
 			<artifactId>dubbo-registry-zookeeper</artifactId>
 			<version>${dubbo-version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.dubbo</groupId>
-			<artifactId>dubbo-registry-multicast</artifactId>
-			<version>${dubbo-version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.dubbo</groupId>
-			<artifactId>dubbo-rpc-dubbo</artifactId>
-			<version>${dubbo-version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.dubbo</groupId>
-			<artifactId>dubbo-remoting-netty4</artifactId>
-			<version>${dubbo-version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.dubbo</groupId>
-			<artifactId>dubbo-serialization-hessian2</artifactId>
-			<version>${dubbo-version}</version>
-		</dependency>
+		</dependency> 
 		 <dependency>
             <groupId>com.alibaba.rocketmq</groupId>
             <artifactId>rocketmq-client</artifactId>

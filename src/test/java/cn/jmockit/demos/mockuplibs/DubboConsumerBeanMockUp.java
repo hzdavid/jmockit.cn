@@ -1,5 +1,7 @@
 package cn.jmockit.demos.mockuplibs;
 
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 /*
  * Copyright (c) jmockit.cn 
  * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
@@ -37,5 +39,14 @@ public class DubboConsumerBeanMockUp extends MockUp<ReferenceBean> {
 		}
 		return (new MockUp(Class.forName(interfaceName)) {
 		}).getMockInstance();
+	}
+	
+	public static void main(String[] args) {
+		Type type=DubboConsumerBeanMockUp.class.getGenericSuperclass();
+		if(type instanceof ParameterizedType) {
+			ParameterizedType ptype=(ParameterizedType)type;
+			Type type1=ptype.getActualTypeArguments()[0];
+			 System.out.println(type1);
+		}
 	}
 }
