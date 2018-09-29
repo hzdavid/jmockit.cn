@@ -9,11 +9,11 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java-version>1.8</java-version>
-		<jmock-version>1.36</jmock-version> 
-		<junit-version>4.12</junit-version> 
+		<jmock-version>1.36</jmock-version>
+		<junit-version>4.12</junit-version>
 		<spring-version>3.2.4.RELEASE</spring-version>
 		<dubbo-version>2.7.0-SNAPSHOT</dubbo-version>
-		<rocketmq-version>3.2.6</rocketmq-version> 
+		<rocketmq-version>3.2.6</rocketmq-version>
 	</properties>
 	<dependencies>
 		<!-- 先声明jmockit的依赖 -->
@@ -56,7 +56,7 @@
 			<groupId>javax.servlet</groupId>
 			<version>2.5</version>
 		</dependency>
-		<!-- dubbo 依赖 --> 
+		<!-- dubbo 依赖 -->
 		<dependency>
 			<groupId>org.apache.dubbo</groupId>
 			<artifactId>dubbo-config-spring</artifactId>
@@ -66,13 +66,13 @@
 			<groupId>org.apache.dubbo</groupId>
 			<artifactId>dubbo-registry-zookeeper</artifactId>
 			<version>${dubbo-version}</version>
-		</dependency> 
-		 <dependency>
-            <groupId>com.alibaba.rocketmq</groupId>
-            <artifactId>rocketmq-client</artifactId>
-            <version>${rocketmq-version}</version>
-        </dependency>
- 
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba.rocketmq</groupId>
+			<artifactId>rocketmq-client</artifactId>
+			<version>${rocketmq-version}</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<plugins>
@@ -112,7 +112,14 @@
 				</configuration>
 			</plugin>
 
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.20</version>
+				<configuration>
+					<disableXmlReport>true</disableXmlReport>
+					<argLine>-Dcoverage-metrics=all</argLine>
+				</configuration>
+			</plugin>
 		</plugins>
-
 	</build>
 </project>
