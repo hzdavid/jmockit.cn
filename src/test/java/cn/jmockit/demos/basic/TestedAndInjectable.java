@@ -1,8 +1,5 @@
 package cn.jmockit.demos.basic;
-/*
- * Copyright (c) jmockit.cn 
- * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
- */
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -12,7 +9,10 @@ import cn.jmockit.demos.UserCheckService;
 import mockit.Expectations;
 import mockit.Injectable;
 import mockit.Tested;
-
+/*
+ * Copyright (c) jmockit.cn 
+ * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
+ */
 //@Tested与@Injectable搭配使用
 public class TestedAndInjectable {
 	// @Tested修饰的类，表示是我们要测试对象,在这里表示，我想测试订单服务类。JMockit也会帮我们实例化这个测试对象

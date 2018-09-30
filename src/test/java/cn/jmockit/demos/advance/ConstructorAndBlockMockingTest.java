@@ -1,8 +1,5 @@
 package cn.jmockit.demos.advance;
-/*
- * Copyright (c) jmockit.cn 
- * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
- */
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -10,6 +7,10 @@ import cn.jmockit.demos.AnOrdinaryClassWithBlock;
 import mockit.Mock;
 import mockit.MockUp;
 
+/*
+ * Copyright (c) jmockit.cn 
+ * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
+ */
 //Mock构造函数&初始代码块
 public class ConstructorAndBlockMockingTest {
 	// AnOrdinaryClassWithBlock的MockUp类，继承MockUp即可

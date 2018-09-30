@@ -1,8 +1,5 @@
 package cn.jmockit.demos.basic;
-/*
- * Copyright (c) jmockit.cn 
- * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
- */
+
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
@@ -13,7 +10,10 @@ import org.junit.Test;
 import cn.jmockit.demos.IPrivilege;
 import mockit.Capturing;
 import mockit.Expectations;
-
+/*
+ * Copyright (c) jmockit.cn 
+ * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
+ */
 //@Capturing注解用途
 public class CapturingTest {
 	// 测试用户ID

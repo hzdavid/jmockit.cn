@@ -1,5 +1,8 @@
 package cn.jmockit.demos.advance;
-
+/*
+ * Copyright (c) jmockit.cn 
+ * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
+ */
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -13,7 +16,7 @@ import mockit.Invocation;
 import mockit.Mock;
 import mockit.MockUp;
 
-//通过在mock做AOP测试方法的时间性能
+//通过在mock时做AOP测试方法的时间性能
 public class MethodCostPerformanceTest {
 
 	// 测试SayHello类每个方法的时间性能

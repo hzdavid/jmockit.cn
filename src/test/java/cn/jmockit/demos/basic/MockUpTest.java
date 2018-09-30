@@ -1,8 +1,5 @@
 package cn.jmockit.demos.basic;
-/*
- * Copyright (c) jmockit.cn 
- * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
- */
+
 import java.util.Calendar;
 import java.util.Locale;
 
@@ -13,7 +10,10 @@ import mockit.Mock;
 import mockit.MockUp;
 
 import static org.junit.Assert.assertTrue;
-
+/*
+ * Copyright (c) jmockit.cn 
+ * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
+ */
 //Mockup & @Mock的Mock方式
 public class MockUpTest {
 

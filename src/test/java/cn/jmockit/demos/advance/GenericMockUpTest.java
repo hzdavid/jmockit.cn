@@ -1,8 +1,5 @@
 package cn.jmockit.demos.advance;
-/*
- * Copyright (c) jmockit.cn 
- * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
- */
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -11,7 +8,10 @@ import mockit.Capturing;
 import mockit.Expectations;
 import mockit.Mock;
 import mockit.MockUp;
-
+/*
+ * Copyright (c) jmockit.cn 
+ * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
+ */
 //Mock泛型
 public class GenericMockUpTest {
 	@Test

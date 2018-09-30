@@ -1,8 +1,5 @@
 package cn.jmockit.demos.basic;
-/*
- * Copyright (c) jmockit.cn 
- * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
- */
+
 import java.util.Calendar;
 
 import org.junit.Assert;
@@ -10,7 +7,10 @@ import org.junit.Test;
 
 import mockit.Expectations;
 import mockit.FullVerifications;
-
+/*
+ * Copyright (c) jmockit.cn 
+ * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
+ */
 //Verification的使用
 public class VerificationTest {
 	@Test

@@ -1,9 +1,6 @@
 package cn.jmockit.demos;
 
-/*
- * Copyright (c) jmockit.cn 
- * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
- */
+
 import java.util.Locale;
 
 import org.junit.Assert;
@@ -11,7 +8,10 @@ import org.junit.Test;
 
 import cn.jmockit.demos.HelloJMockit;
 import mockit.Expectations;
-
+/*
+ * Copyright (c) jmockit.cn 
+ * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
+ */
 //HelloJMockit类的测试类
 public class HelloJMockitTest {
 	/**

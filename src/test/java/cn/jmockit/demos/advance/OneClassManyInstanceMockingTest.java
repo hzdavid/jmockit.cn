@@ -1,8 +1,5 @@
 package cn.jmockit.demos.advance;
-/*
- * Copyright (c) jmockit.cn 
- * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
- */
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -10,7 +7,10 @@ import cn.jmockit.demos.AnOrdinaryClass;
 import mockit.Expectations;
 import mockit.Injectable;
 import mockit.Mocked;
-
+/*
+ * Copyright (c) jmockit.cn 
+ * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
+ */
 //一个类多个实例的Mock 
 public class OneClassManyInstanceMockingTest {
 	// Mock方法一: 把实例传入Expectations的构造函数。适用场景： 只Mock实例的部分方法，对实例的类的其它实例不产生影响

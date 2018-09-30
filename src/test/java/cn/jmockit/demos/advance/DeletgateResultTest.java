@@ -8,7 +8,10 @@ import cn.jmockit.demos.SayHello;
 import mockit.Delegate;
 import mockit.Expectations;
 import mockit.Invocation;
-
+/*
+ * Copyright (c) jmockit.cn 
+ * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
+ */
 // 定制返回结果
 public class DeletgateResultTest {
 	@SuppressWarnings("rawtypes")

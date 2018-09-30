@@ -1,8 +1,5 @@
 package cn.jmockit.demos.usual;
-/*
- * Copyright (c) jmockit.cn 
- * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
- */
+
 import javax.annotation.Resource;
 
 import org.junit.Assert;
@@ -16,7 +13,10 @@ import cn.jmockit.demos.AnOrdinaryClass;
 import cn.jmockit.demos.utils.JNITools;
 import mockit.Mock;
 import mockit.MockUp;
-
+/*
+ * Copyright (c) jmockit.cn 
+ * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
+ */
 //用MockUp来Mock Spring Bean
 @ContextConfiguration(locations = { "/META-INF/applicationContext1.xml" })
 @RunWith(SpringJUnit4ClassRunner.class)

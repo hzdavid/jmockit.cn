@@ -1,8 +1,5 @@
 package cn.jmockit.demos.basic;
-/*
- * Copyright (c) jmockit.cn 
- * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
- */
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -10,7 +7,10 @@ import cn.jmockit.demos.HelloJMockit;
 import mockit.Expectations;
 import mockit.Mocked;
 import mockit.Verifications;
-
+/*
+ * Copyright (c) jmockit.cn 
+ * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
+ */
 //JMockit的程序结构
 public class ProgramConstructureTest {
 

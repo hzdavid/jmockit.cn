@@ -13,7 +13,10 @@ import org.apache.dubbo.config.spring.ReferenceBean;
 import mockit.Invocation;
 import mockit.Mock;
 import mockit.MockUp;
-
+/*
+ * Copyright (c) jmockit.cn 
+ * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
+ */
 //dubbo消费bean的MockUp(伪类）
 @SuppressWarnings("rawtypes")
 public class DubboConsumerBeanMockUp extends MockUp<ReferenceBean> {

@@ -1,15 +1,15 @@
 package cn.jmockit.demos.usual;
-/*
- * Copyright (c) jmockit.cn 
- * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
- */
+
 import org.junit.Assert;
 import org.junit.Test;
 
 import cn.jmockit.demos.AnOrdinaryInterface;
 import mockit.Expectations;
 import mockit.Injectable;
-
+/*
+ * Copyright (c) jmockit.cn 
+ * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
+ */
 //用Expectations来mock接口
 public class InterfaceMockingByExpectationsTest {
 

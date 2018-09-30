@@ -16,7 +16,10 @@ import cn.jmockit.demos.MailService;
 import cn.jmockit.demos.mockuplibs.DubboConsumerBeanMockUp;
 import mockit.Mock;
 import mockit.MockUp;
-
+/*
+ * Copyright (c) jmockit.cn 
+ * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
+ */
 //dubbo消费bean Mock 
 @SuppressWarnings({ "unchecked", "rawtypes" })
 @ContextConfiguration(locations = { "/META-INF/dubbo-consumer.xml" })

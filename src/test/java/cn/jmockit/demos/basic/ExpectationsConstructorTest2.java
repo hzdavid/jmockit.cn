@@ -1,8 +1,5 @@
 package cn.jmockit.demos.basic;
-/*
- * Copyright (c) jmockit.cn 
- * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
- */
+
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.Calendar;
@@ -11,7 +8,10 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import mockit.Expectations;
-
+/*
+ * Copyright (c) jmockit.cn 
+ * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
+ */
 //通过Expectations对其构造函数mock对象进行录制
 public class ExpectationsConstructorTest2 {
 

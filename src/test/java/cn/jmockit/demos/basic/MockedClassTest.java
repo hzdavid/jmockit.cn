@@ -1,15 +1,15 @@
 package cn.jmockit.demos.basic;
-/*
- * Copyright (c) jmockit.cn 
- * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
- */
+
 import java.util.Locale;
 
 import org.junit.Assert;
 import org.junit.Test;
 
 import mockit.Mocked;
-
+/*
+ * Copyright (c) jmockit.cn 
+ * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
+ */
 //@Mocked注解用途
 public class MockedClassTest {
 	// 加上了JMockit的API @Mocked, JMockit会帮我们实例化这个对象，不用担心它为null

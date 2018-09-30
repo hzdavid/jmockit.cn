@@ -20,7 +20,10 @@ import com.alibaba.rocketmq.remoting.exception.RemotingException;
 
 import mockit.Mock;
 import mockit.MockUp;
-
+/*
+ * Copyright (c) jmockit.cn 
+ * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
+ */
 //MQ消息发送者 的MockUp(伪类） 
 public class RocketMQProducerMockUp extends MockUp<DefaultMQProducer> {
 

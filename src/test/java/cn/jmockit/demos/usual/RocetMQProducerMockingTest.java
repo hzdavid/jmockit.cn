@@ -10,7 +10,10 @@ import com.alibaba.rocketmq.client.producer.SendStatus;
 import com.alibaba.rocketmq.common.message.Message;
 
 import cn.jmockit.demos.mockuplibs.RocketMQProducerMockUp;
-
+/*
+ * Copyright (c) jmockit.cn 
+ * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
+ */
 //RocketMQ消息生产者 Mock 
 
 public class RocetMQProducerMockingTest {
