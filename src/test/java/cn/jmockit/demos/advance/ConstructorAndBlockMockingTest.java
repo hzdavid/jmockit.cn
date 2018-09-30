@@ -19,7 +19,7 @@ public class ConstructorAndBlockMockingTest {
 		public void $init(int i) {
 		}
 
-		// Mock静态初始代码块,, 函数名$init就代表类的静态代码块
+		// Mock静态初始代码块,, 函数名$clinit就代表类的静态代码块
 		@Mock
 		public void $clinit() {
 		}
