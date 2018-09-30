@@ -1,5 +1,8 @@
 package cn.jmockit.demos.advance;
-
+/*
+ * Copyright (c) jmockit.cn 
+ * 访问JMockit中文网(jmockit.cn)了解该测试程序的细节
+ */
 import java.io.InputStream;
 import java.net.URL;
 import java.net.URLConnection;

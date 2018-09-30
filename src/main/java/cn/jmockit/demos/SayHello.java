@@ -15,7 +15,7 @@ public class SayHello implements ISayHello {
 		// 根据不同性别，返回不同打招呼的内容
 		switch (gender) {
 		case FEMALE:
-			return "hello Mrs " + who;
+			return "hello Mrs " + who; 
 		case MALE:
 			return "hello Mr " + who;
 		default:
