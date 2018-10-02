@@ -4,17 +4,9 @@
 	xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd        http://dubbo.apache.org/schema/dubbo        http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
 
-	<!-- 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样 -->
 	<dubbo:application name="consumer-of-dubbo-mock-test" />
 
-	<!-- 使用zookeeper暴露发现服务地址 -->
-	<!-- 
-	<dubbo:registry
-		address="zookeeper://your-zk-address:2181" />
-		 -->
-	<dubbo:registry
-		address="zookeeper://zk1.2dfire-daily.com:2181" />
+	<dubbo:registry address="zookeeper://your-zk-address:2181" />
 	<!-- 生成远程服务代理，可以和本地bean一样使用mailService -->
-	<dubbo:reference id="mailService"
-		interface="cn.jmockit.demos.MailService" />
+	<dubbo:reference id="mailService" interface="cn.jmockit.demos.MailService" />
 </beans>
