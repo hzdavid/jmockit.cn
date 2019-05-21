@@ -118,7 +118,7 @@ public class CascadingMockTest {
 
 		}.getMockInstance();
 		String yoursql = "";
-		//可以发现，
+		//可以发现，我们成功地对entityManager.createNativeQuery方法返回值进行了Mock
 		Assert.assertTrue(entityManager.createNativeQuery(yoursql).getResultList().size() == 2);
 	}
 
