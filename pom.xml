@@ -14,6 +14,7 @@
 		<spring-version>3.2.4.RELEASE</spring-version>
 		<dubbo-version>2.7.0-SNAPSHOT</dubbo-version>
 		<rocketmq-version>3.2.6</rocketmq-version>
+		<javax-persistence-version>1.0</javax-persistence-version>
 	</properties>
 	<dependencies>
 		<!-- 先声明jmockit的依赖 -->
@@ -71,6 +72,11 @@
 			<groupId>com.alibaba.rocketmq</groupId>
 			<artifactId>rocketmq-client</artifactId>
 			<version>${rocketmq-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.persistence</groupId>
+			<artifactId>persistence-api</artifactId>
+			<version>${javax-persistence-version}</version>
 		</dependency>
 
 	</dependencies>
